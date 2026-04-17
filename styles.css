@@ -392,7 +392,7 @@ font-weight: 800;
 .mm .home {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("images/coffee1.jpg") no-repeat center center;
+        url("images/backgrounds/home-bg.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
 }
@@ -616,7 +616,7 @@ font-family: 'Montserrat', sans-serif;
 .mm .new-drink {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url("images/matcha.jpg") no-repeat center center;
+        url("images/backgrounds/matcha.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
 }
@@ -984,6 +984,3 @@ font-family: 'Montserrat', sans-serif;
   margin: 40px auto 0;
   padding: 0 20px;
 }
-
-
-
