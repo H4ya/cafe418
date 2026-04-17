@@ -363,27 +363,101 @@ h2 {
     margin: 0 auto;
     padding: 0 20px;
   box-sizing: border-box;
-  
+
    }
-.mm .hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("images/backgrounds/home-bg.jpg") no-repeat center center;
-    background-size: cover;
-    position: relative;
-}
-.mm .section{
-  position: absolute;
-}
 
-
+.mm .title {
+  font-family: "Playfair Display", serif;
+font-weight: 800;
+  font-size: 200px;
+  margin-bottom: 60px;
+  letter-spacing: 3px;
+  text-transform: capitalize;   
+}
 
 
 .mm body {
   margin: 0;
-  padding-top: 70px;
+  padding-top: 60px;
+  overflow-x: hidden;
 }
 
+.mm .home-content {
+    height: 100%;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+}
+.mm .home {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("images/coffee1.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.mm .home-content .left h1 {
+    font-size: 54px ; 
+    font-family: "Playfair Display", serif;
+  line-height: 1.2;
+  color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.mm .home-content .left p {
+    font-size: 18px ;
+    font-family: "Playfair Display", serif;
+     color: #ccc;
+    padding-bottom: 25px;
+}
+
+.mm .left {
+    max-width: 500px;
+}
+
+
+.mm .buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.mm .btn-primary {
+    background: rgb(99, 69, 26);
+    border: 1px solid #aaa;
+  
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+}
+.mm .btn-primary:hover {
+  background: #a8845f;
+}
+.mm .btn-secondary {
+    background: #E1D0BD;
+    border: 1px solid #aaa;
+  font-family: "Playfair Display", serif;
+    padding: 10px 25px;
+    color: #63451a;
+    border-radius: 25px;
+   font-size: 14px;
+    cursor: pointer;
+}
+.mm .btn-secondary:hover {
+  background: #a8845f;
+}
+.mm .stats {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    color: #ccc;
+    font-family: "Playfair Display", serif;
+}
 
 .mm .navbar {
   position: fixed;
@@ -391,42 +465,43 @@ h2 {
   left: 0;
   width: 100%;
   height: 70px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 0 30px;
   box-sizing: border-box;
-
   background: #E1D0BD;
   z-index: 1000;
 }
 
-
 .mm .logo {
-  width: 110px;
+    width: 120px;
+    display: flex;
 }
-
 
 .mm .nav-links {
   display: flex;
   gap: 25px;
-}
-.mm .navbar {
-    height: 80px; /* أو أي ارتفاع يناسب تصميمك */
-    display: flex;
-    align-items: center; /* لضمان توسط العناصر عمودياً */
-    justify-content: space-between;
-    padding: 0 50px;
+  transform: none; 
 }
 
 .mm .nav-links a {
-    display: inline-block;
-    min-width: 80px; /* يضمن أن لكل نص مساحة محجوزة ثابتة */
-    text-align: center;
+  text-decoration: none;
+  gap: 20px;
+  color: #756049;
+  font-size: 18px;
+  transition: 0.3s;
 }
 
+.mm .nav-links a.active {
+  color: #4a320f;
+  font-weight: 600;
+}
+
+.nav-links a:hover,
+.mm .nav-links a:focus {
+  color: #4a320f;
+}
 
 .mm .nav-left {
   display: flex;
@@ -434,23 +509,17 @@ h2 {
   gap: 40px; 
 }
 
-.mm .nav-links {
-  display: flex;
-  gap: 20px;
-}
-.mm .nav-links a:hover {
-  color: #d4a373;
-}
-
-.mm .nav-links .active {
-  color: #231404;
-}
-
 .mm .nav-icons {
   display: flex;
   align-items: center;
   gap: 18px;
 }
+.mm .nav-links {
+    display: flex;
+    gap: 20px;
+    transform: translateX(12%);
+}
+
 
 .mm .icon-img {
   width: 24px;
@@ -460,16 +529,13 @@ h2 {
   transition: 0.3s;
 }
 
-
 .mm .icon-img:hover {
   transform: scale(1.1);
   opacity: 0.7;
 }
-.mm .icon-img {
-    width: 22px;
-    height: 22px;
-    cursor: pointer;
-    transition: 0.3s;
+.mm .new-drink .image img {
+  width: 130%;
+  max-width: 1100px;
 }
 
 .mm .icon-img:hover {
@@ -477,99 +543,17 @@ h2 {
     opacity: 0.8;
 }
 
-.mm .logo {
-    width: 120px;
-    display: flex;
+.mm .coffee-item img {
+  width: 180px;
+  height: 220px;       
+  object-fit: contain; 
+  transition: 0.3s;
 }
-
-.mm .nav-links {
-    display: flex;
-    gap: 20px;
-    transform: translateX(12%);
-}
-
-.mm .nav-links a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #756049;
-    transition: 0.3s;
-    
-}
-
-.mm .nav-links a:hover {
-    color: #d4a373;
-}
-
-.mm .hero-content {
-    height: 100%;
-  padding-top: 100px;
-    display: flex;
-    align-items: center;
-    font-family: "Playfair Display", serif;
-}
-.mm .hero-content h1{
-  color:white;
-}
-
-.mm .left {
-    max-width: 500px;
-}
-
-.mm .left h1 {
-    font-size: 56px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.mm .left p {
-    color: #ccc;
-    font-size: 15px;
-    margin-bottom: 25px;
-}
-
-.mm .buttons {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 25px;
-}
-
-.mm .btn-primary {
-    background: rgb(99, 69, 26);
-    border: none;
-    padding: 12px 20px;
-    color: #fff;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.mm .btn-secondary {
-    background: #E1D0BD;
-    border: 1px solid #aaa;
-    padding: 12px 20px;
-    color: #63451a;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.mm .stats {
-    display: flex;
-    gap: 30px;
-    font-size: 14px;
-    color: #ccc;
-    font-family: "Playfair Display", serif;
-}
-
-.mm .nav-links a.home {
-    color: rgb(74, 50, 16);
-}
-.mm .home { position: relative; 
-    text-decoration: none; 
-    color: rgb(99, 69, 26); } 
-
 
 .mm .home:hover::after {
     height: 3px;
 }
+
 .mm .best-sellers {
   background: #fff8ee;
   padding: 100px 0;
@@ -577,24 +561,14 @@ h2 {
   color: #3e2c23;
 }
 
-.mm .title {
-  font-family: "Playfair Display", serif;
-font-weight: 800;
-  font-size: 42px;
-  margin-bottom: 60px;
-  letter-spacing: 3px;
-  text-transform: capitalize;   
-}
-
-
 .mm .coffee-container {
+  gap: 40px;
   display: flex;
   justify-content: center;
-  gap: 60px;
+  padding-bottom: 40px;
   flex-wrap: wrap;
     
 }
-
 
 .mm .coffee-item {
   display: flex;
@@ -607,13 +581,6 @@ font-weight: 800;
   transition: 0.3s;
 }
 
-
-.mm .coffee-item img {
-  width: 180px;
-  height: 220px;       
-  object-fit: contain; 
-  transition: 0.3s;
-}
 
 
 .mm .coffee-name {
@@ -647,31 +614,37 @@ font-family: 'Montserrat', sans-serif;
   color: white;
 }
 .mm .new-drink {
-  background: #442f10; 
-  padding: 100px 0;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("images/matcha.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
 }
 
 .mm .new-drink-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+
   max-width: 1100px;
   margin: auto;
-    height: 60vh;
-    color: #fffbf5;
+    height: 70vh;
+  gap: 40px;
+    color: #fffcf8;
 }
 
 .mm .new-drink .text {
   flex: 1;
-   color: #fffcf8; 
+   color: #442d0e; 
+  font-size: 18 px;
 }
 
 .mm .new-drink h2 {
+  padding-top: 200px;
   font-family: 'Playfair Display', serif;
-  font-size: 18px;
+  font-size: 25px;
   letter-spacing: 3px;
-  color: #c8a97e;
+  color: #ffddac;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
@@ -679,17 +652,16 @@ font-family: 'Montserrat', sans-serif;
 .mm .new-drink h1 {
   font-family: 'Playfair Display', serif;
   font-size: 42px;
-  color: #fef6f2;
+  color: #ffd1d9;
   margin-bottom: 20px;
 }
 
 .mm .new-drink p {
-  font-size: 16px;
-  color: #ecded5;
+  font-size: 20px;
+  color: #ffffff;
   line-height: 1.6;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
-
 
 .mm .btn {
   padding: 10px 25px;
@@ -726,34 +698,35 @@ font-family: 'Montserrat', sans-serif;
 
 
 .mm .new-drink .image img {
-  width: 880px;
+  max-width: 500px;
+    transform: none; 
+  width: 3000px;
   position: relative;
-    transform: translateX(12%);
   z-index: 1;
   transition: 0.3s;
 }
 
 .mm .contact-section {
   background: #fffcf8;
-  padding: 100px 0;
+  padding-top: 20px;
   text-align: center;
   color: #3e2c23;
+  
 }
 
 .mm .contact-container {
   max-width: 1100px;
-   height: 60vh;
+  height: 90vh;
   margin: auto;
   display: flex;
-  gap: 60px;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+  gap: 40px;
 }
 
-/* معلومات */
 .mm .contact-info {
-  flex: 1;
+  flex: 2;
   text-align: left;
 }
 
@@ -764,20 +737,19 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .mm .contact-info p {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #5a463a;
-    font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
 }
+
 
 .mm .contact-form {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 15px;
-    font-family: 'Playfair Display', serif;
-}
-.mm body {
-  overflow-x: hidden;
+  font-family: 'Playfair Display', serif;
+  margin-top: 35px; 
 }
 
 .contact-form input,
@@ -790,7 +762,17 @@ font-family: 'Montserrat', sans-serif;
   outline: none;
     font-family: 'Playfair Display', serif; 
 }
-
+.mm .map-container {
+  margin-top: 10px;
+  padding: 0;
+}
+.mm .map-container iframe {
+  width: 320px;     
+  height: 180px;
+  border: 0;
+  border-radius: 12px;
+  display: block;
+}
 
 .mm .contact-form button {
   padding: 12px;
@@ -849,32 +831,14 @@ font-family: 'Montserrat', sans-serif;
   display: none;
 }
 
-.mm .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: none;
-  font-size: 28px;
-  color: #bfa37a;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.mm .arrow.left { left: -40px; }
-.mm .arrow.right { right: -40px; }
-
-.mm .arrow:hover {
-  color: #8c6b4f;
-  transform: translateY(-50%) scale(1.2);
-}
 
 
 .mm .card {
+   width: 250px;
     background: white; 
     border-radius: 15px; 
     padding: 20px;
-    width: 240px; 
+
     flex: 0 0 auto; 
     transition: 0.3s;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
@@ -964,78 +928,62 @@ font-family: 'Montserrat', sans-serif;
     font-size: 12px;
 }
 
-  /* NEW DRINK */
-  .mm .new-drink-content {
-    gap: 40px;
-    height: auto;
-  }
-
-  .mm .new-drink h1 {
-    font-size: 34px;
-  }
-
-  .mm .new-drink p {
-    font-size: 14px;
-  }
-
-  .mm .new-drink .image img {
-    max-width: 500px;
-    transform: none; 
-  }
-
-  .mm .new-drink .image img {
-  width: 130%;
-  max-width: 1100px;
-}
-.mm .new-drink {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url("./images/backgrounds/matcha.jpg") no-repeat center center;
-    background-size: cover;
-    position: relative;
+.mm body {
+  font-size: clamp(14px, 1vw, 18px);
 }
 
-.mm .new-drink-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  max-width: 1100px;
-  margin: auto;
-    height: 70vh;
-    color: #fffcf8;
+.mm .new-drink .image img {
+  width: 100%;
+  max-width: 880px; 
+  height: auto;
 }
 
-.mm .new-drink .text {
-  flex: 1;
-   color: #442d0e; 
-  font-size: 18 px;
+
+.mm .card {
+  width: clamp(180px, 20vw, 240px);
 }
 
-.mm .new-drink h2 {
-  padding-top: 200px;
-  font-family: 'Playfair Display', serif;
-  font-size: 35px;
-  letter-spacing: 3px;
-  color: #ffddac;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+
+.mm .card img {
+  height: clamp(140px, 18vw, 160px);
 }
 
-.mm .new-drink h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 42px;
-  color: #ffd1d9;
-  margin-bottom: 20px;
+.mm .title {
+  font-size: clamp(28px, 4vw, 42px);
 }
 
-.mm .new-drink p {
-  font-size: 40px;
-  color: #ffffff;
-  line-height: 1.6;
-  padding-bottom: 25px;
+.mm .category-title {
+  font-size: clamp(18px, 2.5vw, 24px);
 }
+
+.mm .menu-section {
+  padding: clamp(20px, 5vw, 40px) clamp(20px, 6vw, 80px);
+}
+
+
+.mm .navbar {
+  padding: 0 clamp(20px, 5vw, 50px);
+}
+
 
 .mm .new-drink-content {
   gap: clamp(20px, 5vw, 60px);
 }
+
+
+.mm .contact-container {
+  gap: clamp(20px, 5vw, 60px);
+}
+
+
+.mm .iced-slider {
+  padding: 20px clamp(10px, 3vw, 20px);
+}
+.mm .map-container {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+}
+
+
+
