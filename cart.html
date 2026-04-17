@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="mb">
+<head>
+<meta charset="UTF-8">
+<title>Cart</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <div class="nav-left">
+        <img src="./images/theLogo.png" class="logo">
+
+        <div class="nav-links">
+            <a href="product.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="#">About us</a>
+            <a href="#contact">Contact us</a>
+        </div>
+    </div>
+
+    <div class="nav-icons">
+        <img src="./images/icons/search.png" class="icon-img">
+        <img src="./images/icons/cart.png" class="icon-img" onclick="window.location.href='cart.html'">
+        <img src="./images/icons/profile.png" class="icon-img">
+    </div>
+
+</div>
+
+
+<div class="cart-section">
+
+    <h3 style="color:#63451a;">🛒 Your Cart</h3>
+
+    <div class="cart-item">
+        <span>Caramel Latte (Medium, Hot) x1</span>
+        <span>18 SAR</span>
+    </div>
+
+    <div class="cart-item">
+        <span>Caramel Latte (Large, Iced) x2</span>
+        <span>36 SAR</span>
+    </div>
+
+    <div class="total">
+        Total: 54 SAR
+    </div>
+
+</div>
+
+<div class="cart-section">
+
+    <h3 style="color:#63451a;">📍 Location</h3>
+
+<div class="form-row">
+    <label>City</label>
+
+    <select>
+        <option selected>Riyadh</option>
+        <option>Jeddah</option>
+        <option>Dammam</option>
+        <option>Khobar</option>
+        <option>Dhahran</option>
+        <option>Mecca</option>
+        <option>Medina</option>
+        <option>Taif</option>
+        <option>Tabuk</option>
+        <option>Hail</option>
+        <option>Najran</option>
+        <option>Abha</option>
+        <option>Buraidah</option>
+        <option>Hofuf</option>
+        <option>Jazan</option>
+        <option>Yanbu</option>
+        <option>Sakaka</option>
+        <option>Arar</option>
+        <option>Al Jubail</option>
+        <option>Al Qatif</option>
+    </select>
+
+    <span class="hint">Required</span>
+</div>
+
+    <div class="form-row">
+        <label>Street</label>
+        <input type="text">
+        <span class="hint">Required</span>
+    </div>
+
+</div>
+
+<div class="cart-section">
+
+    <h3 style="color:#63451a;">💳 Payment</h3>
+
+    <div class="form-row">
+        <label>Card Name</label>
+        <input type="text">
+        <span class="hint">Full name</span>
+    </div>
+
+    <div class="form-row">
+        <label>Card Number</label>
+        <input type="text">
+        <span class="hint">16 digits</span>
+    </div>
+
+    <div class="form-row">
+        <label>Expiry</label>
+        <input type="month">
+        <span class="hint">MM/YYYY</span>
+    </div>
+
+    <div class="form-row">
+        <label>CVV</label>
+        <input type="text">
+        <span class="hint">3 digits</span>
+    </div>
+
+</div>
+
+
+<div class="cart-section">
+
+    <button class="btn" onclick="window.location.href='home.html'">
+        Buy Now
+    </button>
+
+</div>
+
+</body>
+</html>

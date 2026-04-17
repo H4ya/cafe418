@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="mb">
+<head>
+<meta charset="UTF-8">
+<title>Product Page</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="navbar" >
+
+    <div class="nav-left">
+        <img src="./images/theLogo.png" class="logo">
+
+        <div class="nav-links">
+            <a href="product.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="#">About us</a>
+            <a href="#contact">Contact us</a>
+        </div>
+    </div>
+
+    <div class="nav-icons">
+        <img src="./images/icons/search.png" class="icon-img">
+        <img src="./images/icons/cart.png" class="icon-img" onclick="window.location.href='cart.html'">
+        <img src="./images/icons/profile.png" class="icon-img">
+    </div>
+
+</div>
+
+<div class="container">
+
+    <div class="product-img">
+        <img src="iced-americano.png">
+    </div>
+
+    <div class="product-info">
+
+        <div class="product-name">Caramel Latte ☕</div>
+
+        <div class="price">
+            18 SAR <span class="old-price">22 SAR</span>
+        </div>
+
+        <p>Delicious caramel latte made with fresh espresso and creamy milk.</p>
+
+        <label>Size</label>
+        <select>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+        </select><br></br>
+
+        <label>Coffee Type</label>
+        <select>
+            <option>Hot</option>
+            <option>Iced</option>
+        </select><br></br>
+
+        <label for="3">Quantity</label><br/>
+        <input type="number" value="1" min="1" max="10" class="number" id="3"><br></br>
+<a href="menu.html">
+        <button class="btn">Add to Cart</button>
+</a>
+<a href="cart.html">
+    <button class="back">Go to Cart</button>
+</a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
